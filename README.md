@@ -1,5 +1,10 @@
 # SERVICENOW-DISCOVERY
 
+Discovery is classified into 2 types:
+
+1. Horizontal discovery
+2. Top-Down discovery
+
 # Horizontal Discovery
 
 Discovery uses horizontal discovery as a technique to scan your network, find computers and devices, and then populate the CMDB with discovered CIs. Horizontal discovery create direct relationship between computer CIs and application CIs.
@@ -38,7 +43,22 @@ Service mapping first uses horizontal discovery to find the physical and virtual
 
 # Phases of Discovery
 
+Phases of discovery is classified into 4 types:
+
+1. Scanning
+2. Classification
+3. Identification
+4. Exploration
+
+# Scanning Phase
+
 When the discovery is initiated, a probe called Shazzam is launced to detect, what ports are open on the particular device in the network. The data which is returned back is analyzed by the Shazzam probe sensors to identify activities on this open port.
 
-Note: UNIX-based OS communicates with SSH portocol over port 22.
- 
+Note: 
+
+1. UNIX-based OS communicates with SSH protocol over port 22.
+2. Windows based OS communicates with WMI protocol over port 135 or higher.
+
+# Classification Phase
+
+If the discovery detects the any response on the devices on a specific IP Address, It sends additional probes to find out more like 
