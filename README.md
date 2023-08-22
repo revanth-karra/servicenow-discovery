@@ -58,6 +58,7 @@ Note:
 
 1. UNIX-based OS communicates with SSH protocol over port 22.
 2. Windows based OS communicates with WMI protocol over port 135 or higher.
+3. SNMP on port 161.
 
 # Classification Phase
 
@@ -80,4 +81,13 @@ Additional probes are used in this phase. These probes are known as exploration 
 
 Note: Additional informaiton like RAM, CPU, Installed software and Running processes.
 
-Finally, after gathering all the information, discovery creates relationship between applications and devices. In the recent update, patterns are used in this process of creating relationships between these CIs because patterns contains steps that perform exploration of the CI.
+Finally, after gathering all the information, discovery creates relationship between applications and devices. In the recent update, patterns are used in this process of gathering CIs because patterns contains steps that perform exploration of the CIs.
+
+# Discovery Schedules
+
+You can use discovery schedule to launch horizontal discovery, here horizontal discovery uses probes, sensors and patterns to scan the devices in the network to obtain the CIs.
+
+# Discovery Classifiers
+
+A classifier oders discovery which probe needs to be initiated for identification and exploration phases. Classifiers triggers horizontal pattern probe, rather than triggering additional probes for identification and exploration phases.
+
