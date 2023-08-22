@@ -64,7 +64,7 @@ Note:
 
 If the discovery detects the any response on the devices on a specific IP Address, It sends additional probes to find out more like type of the device and OS on the device.
 
-Example: Discovery sends WMI probe to a windows machine to detect Windows 2012 Operating system
+Example: Classification probe gathers the information about the type of the windows, such as release version(i.e 2008, 2012, 2016) and if it disocverys any virtual devices then it gathers virtual IP address.
 
 # Identification Phase
 
@@ -90,4 +90,11 @@ You can use discovery schedule to launch horizontal discovery, here horizontal d
 # Discovery Classifiers
 
 A classifier oders discovery which probe needs to be initiated for identification and exploration phases. Classifiers triggers horizontal pattern probe, rather than triggering additional probes for identification and exploration phases.
+
+# Parameters
+
+1. Unix - Linux, Solaris and HP-UX, V2, Communicating with SSH protocol
+2. Windows identifies windows computers communicating with WMI protocol.
+3. SNMP - routers, switches and printers.
+4. 
 
