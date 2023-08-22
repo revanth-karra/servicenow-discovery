@@ -64,3 +64,20 @@ Note:
 If the discovery detects the any response on the devices on a specific IP Address, It sends additional probes to find out more like type of the device and OS on the device.
 
 Example: Discovery sends WMI probe to a windows machine to detect Windows 2012 Operating system
+
+# Identification Phase
+
+In the identification phase, discovery tries to find out more about the device and then tries to check if the obtained CI in this discover is exsits in the CMDB or not. If there is no CI, Identifiers or Probes or Sensors are used by the discovery of the Identification phase to create the new CIs.
+If already exists then it will be updated with latest CIs.
+
+Note: CI Identifiers are also known as Identification rules. When identifying the existing CIs in the CMDB, attributes are used. These attributes are identified by using CI Identifiers (Identification rules).
+
+Note: In the first line we talked about more about the devices means like IP/MAC address, Host name and serial number.
+
+# Exploration Phase
+
+Additional probes are used in this phase. These probes are known as exploration probes to gather additional information like applications, memory, network cards and drivers. 
+
+Note: Additional informaiton like RAM, CPU, Installed software and Running processes.
+
+Finally, after gathering all the information, discovery creates relationship between applications and devices. In the recent update, patterns are used in this process of creating relationships between these CIs because patterns contains steps that perform exploration of the CI.
