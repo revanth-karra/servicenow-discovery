@@ -61,4 +61,6 @@ Note:
 
 # Classification Phase
 
-If the discovery detects the any response on the devices on a specific IP Address, It sends additional probes to find out more like 
+If the discovery detects the any response on the devices on a specific IP Address, It sends additional probes to find out more like type of the device and OS on the device.
+
+Example: Discovery sends WMI probe to a windows machine to detect Windows 2012 Operating system
